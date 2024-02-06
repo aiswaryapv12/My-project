@@ -14,6 +14,7 @@ public class Thismeth {
 		this.sub();
 		int  c = num+num2;
 		System.out.println("sum is "+c);
+		System.out.println(c);
 	}
 	public void sub ()
 	{
