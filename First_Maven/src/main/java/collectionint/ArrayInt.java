@@ -1,6 +1,7 @@
 package collectionint;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayInt {
@@ -34,7 +35,15 @@ public class ArrayInt {
 		System.out.println("present or not in the array"+d);
 		
 		System.out.println(b1.get(2));
+		System.out.println(b1);
+		Iterator itr = b1.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
 		
+		itr.remove();
+		System.out.println(b1);
 		
 	}
 	
@@ -74,7 +83,7 @@ public class ArrayInt {
 		// TODO Auto-generated method stub
 		ArrayInt obj =  new ArrayInt();
 		obj.genericInt();
-		obj.genericList();
+		//obj.genericList();
 	}
 
 }
